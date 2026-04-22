@@ -1,6 +1,6 @@
 /home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/PvPCommand.java
 /home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/PvPToggle.java
-/home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/events/PVPToggleEvent.java
+/home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/events/PvPToggleEvent.java
 /home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/listeners/PlayerChangeWorld.java
 /home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/listeners/PlayerJoin.java
 /home/rootbeer/IdeaProjects/PvPToggle/src/main/java/com/github/aasmus/pvptoggle/listeners/PlayerLeave.java

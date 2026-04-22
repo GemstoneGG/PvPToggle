@@ -1,6 +1,6 @@
 package com.github.aasmus.pvptoggle;
 
-import com.github.aasmus.pvptoggle.events.PVPToggleEvent;
+import com.github.aasmus.pvptoggle.events.PvPToggleEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -33,7 +33,7 @@ public class PvPCommand implements CommandExecutor {
 						} else if (args[0].equals("toggle")) {
 							if (current == true) {
 							    if (Util.setPlayerState(other, false, console)) {
-									Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+									Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                     Chat.send(other, "PVP_STATE_ENABLED");
                                     if (PvPToggle.instance.getConfig().getBoolean("SETTINGS.PARTICLES")) {
                                         Util.particleEffect(other.getPlayer());
@@ -41,13 +41,13 @@ public class PvPCommand implements CommandExecutor {
                                 }
 							} else {
 							    if (Util.setPlayerState(other, true, console)) {
-									Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+									Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                     Chat.send(other, "PVP_STATE_DISABLED");
                                 }
 							}
 						} else if (args[0].equalsIgnoreCase("on")) {
 						    if (Util.setPlayerState(other, false, console)) {
-								Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+								Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                 Chat.send(other, "PVP_STATE_ENABLED");
                                 if (current == true) {
                                 	if (PvPToggle.instance.getConfig().getBoolean("SETTINGS.PARTICLES")) {
@@ -57,7 +57,7 @@ public class PvPCommand implements CommandExecutor {
                             }
 						} else if (args[0].equalsIgnoreCase("off")) {
 						    if (Util.setPlayerState(other, true, console)) {
-								Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+								Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                 Chat.send(other, "PVP_STATE_DISABLED");
                             }
 						}
@@ -91,7 +91,7 @@ public class PvPCommand implements CommandExecutor {
 								if (current == true) {
 									Util.setCooldownTime(player);
 									if (Util.setPlayerState(player, false, player)) {
-										Bukkit.getPluginManager().callEvent(new PVPToggleEvent(player));
+										Bukkit.getPluginManager().callEvent(new PvPToggleEvent(player));
                                         Chat.send(player, "PVP_STATE_ENABLED");
                                         if (PvPToggle.instance.getConfig().getBoolean("SETTINGS.PARTICLES")) {
                                             Util.particleEffect(player.getPlayer());
@@ -99,14 +99,14 @@ public class PvPCommand implements CommandExecutor {
                                     }
 								} else {
 								    if (Util.setPlayerState(player, true, player)) {
-										Bukkit.getPluginManager().callEvent(new PVPToggleEvent(player));
+										Bukkit.getPluginManager().callEvent(new PvPToggleEvent(player));
                                         Chat.send(player, "PVP_STATE_DISABLED");
                                     }
 								}
 							} else if (args[0].equalsIgnoreCase("on")) {
 								Util.setCooldownTime(player);
 								if (Util.setPlayerState(player, false, player)) {
-									Bukkit.getPluginManager().callEvent(new PVPToggleEvent(player));
+									Bukkit.getPluginManager().callEvent(new PvPToggleEvent(player));
                                     Chat.send(player, "PVP_STATE_ENABLED");
                                     if (current == true) {
                                     	if (PvPToggle.instance.getConfig().getBoolean("SETTINGS.PARTICLES")) {
@@ -116,7 +116,7 @@ public class PvPCommand implements CommandExecutor {
                                 }
 							} else if (args[0].equalsIgnoreCase("off")) {
 							    if (Util.setPlayerState(player, true, player)) {
-									Bukkit.getPluginManager().callEvent(new PVPToggleEvent(player));
+									Bukkit.getPluginManager().callEvent(new PvPToggleEvent(player));
                                     Chat.send(player, "PVP_STATE_DISABLED");
                                 }
 							} else if (args[0].equalsIgnoreCase("status")) {
@@ -148,7 +148,7 @@ public class PvPCommand implements CommandExecutor {
 							if (args[0].equals("toggle")) {
 								if (current == true) {
 								    if (Util.setPlayerState(other, false, sender)) {
-										Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+										Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                         Chat.send(other, "PVP_STATE_ENABLED");
                                         if (PvPToggle.instance.getConfig().getBoolean("SETTINGS.PARTICLES")) {
                                             Util.particleEffect(other.getPlayer());
@@ -156,13 +156,13 @@ public class PvPCommand implements CommandExecutor {
                                     }
 								} else {
 								    if (Util.setPlayerState(other, true, sender)) {
-										Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+										Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                         Chat.send(other, "PVP_STATE_DISABLED");
                                     }
 								}
 							} else if (args[0].equalsIgnoreCase("on")) {
 							    if (Util.setPlayerState(other, false, sender)) {
-									Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+									Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                     if (current == true) {
                                     	if (PvPToggle.instance.getConfig().getBoolean("SETTINGS.PARTICLES")) {
                                             Util.particleEffect(other.getPlayer());	
@@ -172,7 +172,7 @@ public class PvPCommand implements CommandExecutor {
                                 }
 							} else if (args[0].equalsIgnoreCase("off")) {
 							    if (Util.setPlayerState(other, true, sender)) {
-									Bukkit.getPluginManager().callEvent(new PVPToggleEvent(other));
+									Bukkit.getPluginManager().callEvent(new PvPToggleEvent(other));
                                     Chat.send(other, "PVP_STATE_DISABLED");
                                 }
 							}

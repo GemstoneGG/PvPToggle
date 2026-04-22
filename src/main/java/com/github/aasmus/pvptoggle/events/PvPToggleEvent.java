@@ -5,11 +5,11 @@ import org.bukkit.event.HandlerList;
 import org.bukkit.entity.Player;
 import org.jspecify.annotations.NonNull;
 
-public class PVPToggleEvent extends Event {
+public class PvPToggleEvent extends Event {
 
     private final Player player;
 
-    public PVPToggleEvent(Player player) {
+    public PvPToggleEvent(Player player) {
         this.player = player;
     }
 
