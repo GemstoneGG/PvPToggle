@@ -1,0 +1,11 @@
+com/github/aasmus/pvptoggle/events/PVPToggleEvent.class
+com/github/aasmus/pvptoggle/PvPToggle.class
+com/github/aasmus/pvptoggle/listeners/PlayerChangeWorld.class
+com/github/aasmus/pvptoggle/utils/Util.class
+com/github/aasmus/pvptoggle/utils/Chat.class
+com/github/aasmus/pvptoggle/listeners/PlayerLeave.class
+com/github/aasmus/pvptoggle/utils/PersistentData.class
+com/github/aasmus/pvptoggle/PvPCommand.class
+com/github/aasmus/pvptoggle/listeners/PvP.class
+com/github/aasmus/pvptoggle/listeners/PlayerJoin.class
+com/github/aasmus/pvptoggle/utils/PlaceholderAPIHook.class

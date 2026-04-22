@@ -1,0 +1,30 @@
+main: com.github.aasmus.pvptoggle.PvPToggle
+name: PvPToggle
+version: 2.0
+api-version: '1.13'
+folia-supported: true
+author: aasmus
+description: Plugin that allows players to toggle PvP state
+softdepend: [ PlaceholderAPI ]
+commands:
+  pvp:
+    description: used to change PvP state.
+    usage: /pvp
+    permission: pvptoggle.allow
+    permission-message: You don't have the pvptoggle.allow permission node.
+permissions:
+  pvptoggle.allow:
+    description: allows player to change pvp state
+    default: true
+  pvptoggle.others:
+    description: allows player to see other player's pvp state
+    default: op
+  pvptoggle.others.set:
+    description: allows player to set other players pvp state
+    default: op
+  pvptoggle.bypass:
+    description: allows player to bypass cooldown
+    default: op
+  pvptoggle.reload:
+    description: allows player to reload config
+    default: op
