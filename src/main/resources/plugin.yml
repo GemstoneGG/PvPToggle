@@ -1,10 +1,11 @@
 main: com.github.aasmus.pvptoggle.PvPToggle
-softdepend: [PlaceholderAPI, NametagEdit]
 name: PvPToggle
-version: 1.8
-api-version: 1.13
-author: aasmus (with modifications by the Red Fusion Team)
+version: 2.0
+api-version: '1.13'
+folia-supported: true
+author: aasmus
 description: Plugin that allows players to toggle PvP state
+softdepend: [ PlaceholderAPI ]
 commands:
   pvp:
     description: used to change PvP state.
